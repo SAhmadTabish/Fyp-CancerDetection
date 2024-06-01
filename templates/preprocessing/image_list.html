@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploaded Medical Images</title>
+</head>
+<body>
+    <h2>Uploaded Medical Images</h2>
+    <ul>
+        {% for image in images %}
+            <li>{{ image.image.name }} - Uploaded on {{ image.uploaded_at }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
